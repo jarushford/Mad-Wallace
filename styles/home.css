@@ -7,13 +7,17 @@ body {
 }
 
 
+
+/*HEADER STYLING*/
+
+
 .toolbar {
 
 	margin: 0px;
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	background: linear-gradient(to right, rgba(47,47,47,.8) , rgba(47,47,47,.9), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,.9), rgba(47,47,47,.8));
 	border-bottom: 3px solid #b999c8;
 	position: fixed;
 	top: 0px;
@@ -39,7 +43,7 @@ body {
 .dropdown-content a{
 	float: none;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -76,22 +80,26 @@ body {
 	margin-right: auto;
 }
 
-.news_hookline {
-	padding: 0px;
-	margin: 0px;
+
+
+
+/*TEXT STYLING*/
+
+
+
+h2 {
+	font-size: 32px;
 }
 
-#hookline {
-	height: 315px;
-	width: 315px;
-	display: block;
-	margin-left: 0px;
-	margin-right: 20px;
+h3 {
+	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
+				 0px 8px 18px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 h2, h3, #copyright {
 	font-family: 'Open Sans', sans-serif;
-	padding: 10px 10px 0px 0px;
+	padding: 10px 10px 10px 0px;
 	margin: 10px 0px;
 	color: white;
 }
@@ -105,10 +113,6 @@ p, li, th, td {
 	padding: 0px;
 	margin-bottom: 5px;
 	color: white;
-}
-
-.tour {
-	width: 375px;
 }
 
 th {
@@ -132,19 +136,6 @@ td {
 	padding-left: 15px;
 }
 
-a {
-	padding: 10px;
-}
-
-span>a:link, span>a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-.head:hover {
-	background-color: grey;
-}
-
 p>a:link, p>a:visited {
 	text-decoration: none;
 	color: #f5cc8f;
@@ -152,6 +143,44 @@ p>a:link, p>a:visited {
 
 p>a:hover {
 	text-decoration: underline;
+}
+
+span>a:link, span>a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+/*ELEMENT SPACING AND MISC*/
+
+
+.news_hookline {
+	padding: 0px;
+	margin: 0px;
+}
+
+#hookline {
+	height: 315px;
+	width: 315px;
+	display: block;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+.tour {
+	width: 350px;
+}
+
+a {
+	padding: 10px;
+}
+
+.head:hover {
+	background-color: grey;
 }
 
 @media screen and (min-width: 1000px){
@@ -174,6 +203,13 @@ p>a:hover {
 }
 
 
+
+
+
+
+/*FOOTER STYLING*/
+
+
 footer {
 	margin-top: 80px;
 	margin-bottom: 40px;
@@ -181,6 +217,7 @@ footer {
 
 div>h3 {
 	text-align: center;
+	padding-right: none;
 }
 
 div>input {
@@ -205,7 +242,8 @@ div>input {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+	margin-top: 15px;
 	opacity: .8;
 }
 
@@ -223,10 +261,12 @@ div>input {
 #copyright {
 	text-align: center;
 	font-size: 12px;
+	padding-right: 0px;
+	padding-left: 8px;
 }
 
 i {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 input[type=email] {
@@ -237,6 +277,8 @@ input[type=email] {
     /*border: 3px solid #4e285a;*/
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 input[type=submit] {
@@ -249,11 +291,15 @@ input[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 45px;
 }
 
 input[type=submit]:hover{
 	cursor: pointer;
 	background-color: grey;
+	transform: translateY(-3px);
 }
 
 
