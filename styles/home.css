@@ -11,7 +11,7 @@ body {
 
 	margin: 0px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
 	border-bottom: 3px solid #b999c8;
@@ -25,19 +25,21 @@ body {
 .dropdown-content{
 	display: none;
 	position: absolute;
-	background: linear-gradient(to right, rgba(47,47,47,1) , rgba(47,47,47,1), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,1), rgba(47,47,47,1));
-	width: %100;
+	background-color: grey;
+	overflow: hidden;
+	width: inherit;
 	z-index: 1;
 	border-bottom: 3px solid #b999c8;
 	border-right: 3px solid #b999c8;
 	border-left: 3px solid #b999c8;
+	border-top:3px solid #b999c8;
 	margin-top: 10px;
 }
 
 .dropdown-content a{
 	float: none;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -46,20 +48,22 @@ body {
 }
 
 .dropdown-content a:hover{
-	background-color: grey;
+	background: linear-gradient(to right, rgba(47,47,47,1) , rgba(47,47,47,1), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,1), rgba(47,47,47,1));
 }
 
 #dropdown:hover .dropdown-content {
-	display: block;
-
+	display: flex;
 }
 
+.dropdown-content a{
+	flex:;
+}
 
 .head {
 	font-size: 30px;
-	margin: 10px 50px;
+	margin: 10px 0px;
 	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
+	text-align: center;
 	flex-grow: 1;
 	flex-basis: 0;
 }
@@ -137,7 +141,7 @@ span>a:link, span>a:visited {
 	color: white;
 }
 
-span>a:hover {
+.head:hover {
 	background-color: grey;
 }
 
