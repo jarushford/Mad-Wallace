@@ -1,0 +1,195 @@
+body {
+	max-width: 1200px;
+	margin: auto;
+	background: url("../background.png");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.toolbar {
+
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background-color: #2f2f2f;*/
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	border-bottom: 3px solid #b999c8;
+
+}
+
+.head {
+	font-size: 30px;
+	margin: 10px 50px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#coverPhoto {
+	height: 400px;
+	width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news_hookline {
+	padding: 0px;
+	margin: 0px;
+}
+
+#hookline {
+	height: 315px;
+	width: 315px;
+	display: block;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+h2, h3, #copyright {
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 10px 0px 0px;
+	margin: 10px 0px;
+	color: white;
+}
+
+.listen_title, .watch_title {
+	margin-bottom: 18px;
+}
+
+p, li, th, td {
+	font-family: 'PT Sans', sans-serif;
+	padding: 0px;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.tour {
+	width: 375px;
+}
+
+th {
+	font-size: 20px;
+	padding: 5px;
+}
+
+td {
+	border-top: 1px solid rgba(255,255,255,.3);
+}
+
+.date {
+	font-size: 30px;
+	padding: 5px;
+	color: lightgrey;
+}
+
+.venue {
+	font-size: 20px;
+	padding: 5px;
+	padding-left: 15px;
+}
+
+a {
+	padding: 10px;
+}
+
+span>a:link, span>a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+span>a:hover {
+	background-color: grey;
+}
+
+p>a:link, p>a:visited {
+	text-decoration: none;
+	color: #ffab70;
+}
+
+p>a:hover {
+	text-decoration: underline;
+}
+
+
+.grid {
+	max-width: 1000px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"news listen"
+		"tour watch";
+}
+
+#youtube {
+	width: 600px;
+	height: 400px;
+}
+
+footer {
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+footer>h3 {
+	text-align: center;
+}
+
+footer>input {
+	display: block;
+	margin: 15px auto;
+}
+
+#mwClick {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 12px;
+}
+
+i {
+	font-size: 30px;
+}
+
+input[type=email] {
+	height: 40px;
+	width: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=submit] {
+	height: 30px;
+	width: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: lightgreen;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+
+

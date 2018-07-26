@@ -1,51 +1,69 @@
 <html>
 <head>
 	<title>Mad Wallace Home</title>
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link href="styles/global-style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
 		<div class="toolbar">
-			<span class="home"><a href="home.html" title="link to home page">home</a></span>
-			<span class="tour"><a href="tour.html" title="link to tour page">tour</a></span>
-			<span class="media"><a href="media.html" title="link to media page">media</a></span>
-			<span class="about"><a href="about.html" title="link to about page">about</a></span>
-			<span class="contact"><a href="contact.html" title="link to contact page">contact</a></span>
+			<span class="head"><a href="tour.html" >tour</a></span>
+			<span class="head"><a href="media.html">media</a></span>
+			<span class="head"><a href="home.html" >home</a></span>
+			<span class="head"><a href="about.html">about</a></span>
+			<span class="head"><a href="contact.html">contact</a></span>
 		</div>
-		<img src="cover.jpg" id="coverPhoto" alt="Band Cover Photo" title="coverphoto" height="300px" width="1800px">
+		<img src="cover.jpg" id="coverPhoto" alt="Band Cover Photo" title="coverphoto">
 	</header>
-	<div class="news"> 
-		<h2>news</h2>
-		<p>New Album Hook Line &amp; Sinker. <a href="https://madwallace.bandcamp.com/releases" target="_blank" title="Bandcamp Link">Get it Today</a></p><br />
-		<img src="hookline-album-art.jpg" id="hookline-album-art" alt="Hook Line and Sinker" height="200px" width="200px">
-	</div>
-	<div class="listen">
-		<h2>listen</h2>
-		<iframe id="spotifyPlayer" src="https://open.spotify.com/embed?uri=spotify:album:1d9BAK80q2Kmp1CCjKLFHP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-	</div>
-	<div class="tour">
-		<h2>tour</h2>
-			<ul>
-				<li><span class="date">8/10/2018</span>Denver, CO @ Herman's Hideaway</li>
-				<li><span class="date">8/31/2018</span>Englewood, CO @ Moe's Original BBQ</li>
-			</ul>
-	</div>
-	<div class="watch">
-		<h2>watch</h2>
-		<iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/uLFcwhDzJCU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<div class="grid">
+		<div class="news"> 
+			<h2>news</h2>
+			<div class="news_hookline">
+				<p>New Album Hook Line &amp; Sinker.<a href="https://madwallace.bandcamp.com/releases" target="_blank" title="Bandcamp Link">Get it Today!</a></p><br />
+				<img id="hookline" src="hookline-album-art.jpg" id="hookline-album-art" alt="Hook Line and Sinker" height="200px" width="200px">
+			</div>
+		</div>
+		<div class="listen">
+			<h2 class="listen_title">listen</h2>
+			<iframe id="spotifyPlayer" src="https://open.spotify.com/embed?uri=spotify:album:1d9BAK80q2Kmp1CCjKLFHP" width="600px" height="357px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		<div class="tour">
+			<h2>tour</h2>
+				<table style= "width:100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>date</th>
+						<th>location</th>
+					</tr>
+					<tr>
+						<td class="date">8/10/18</td>
+						<td class="venue">Denver, CO @ Herman's Hideaway</td>
+					</tr>
+					<tr>
+						<td class="date">8/31/18</td>
+						<td class="venue">Englewood, CO @ Moe's Original BBQ</td>
+					</tr>	
+				</table>	
+		</div>
+		<div class="watch">
+			<h2 class="watch_title">watch</h2>
+			<iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/uLFcwhDzJCU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
 	</div>
 	<footer class="footer">
-		<img src="mwlogo-blue.png" id="mwClick" alt="Click to Top" height="60px" width="50px">
+		<a href="#top"/><img src="mwlogo-blue.png" id="mwClick" alt="Click to Top" height="60px" width="50px"></a>
 			<h3>Suscribe for tour updates and more!</h3>
 			<input type="email" name="email" placeholder="email address" />
-			<input type="submit" value="Submit" /> 
-			<a href="https://www.facebook.com/madwallaceband/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
-			<a href="https://www.instagram.com/mad.wallace/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
-			<a href="https://open.spotify.com/artist/6H2CmXWubR7YVd6n1hlXq7" target="_blank" title="spotify"><i class="fab fa-spotify"></i></a>
-			<a href="contact.html" target="_blank" title="email"><i class="fas fa-envelope"></i></a>
-			<a href="https://www.youtube.com/channel/UC6N29y6h0Fqh7VmEObN6LHA" target="_blank" title="youtube"><i class="fab fa-youtube"></i></a>
-			<a href="https://www.youtube.com/watch?v=_lvB2tHSEG4" target="_blank" title="bath"><i class="fas fa-bath"></i></a>
+			<input type="submit" value="Subscribe"/>
+			<p class="social-icons">
+				<a href="https://www.facebook.com/madwallaceband/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/mad.wallace/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://open.spotify.com/artist/6H2CmXWubR7YVd6n1hlXq7" target="_blank" title="spotify"><i class="fab fa-spotify"></i></a>
+				<a href="contact.html" target="_blank" title="email"><i class="fas fa-envelope"></i></a>
+				<a href="https://www.youtube.com/channel/UC6N29y6h0Fqh7VmEObN6LHA" target="_blank" title="youtube"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.youtube.com/watch?v=_lvB2tHSEG4" target="_blank" title="bath"><i class="fas fa-bath"></i></a>
+			</p>
 			<p id="copyright">copyright &copy; 2018</p>
 	</footer>
 </body>
