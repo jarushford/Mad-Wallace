@@ -1,5 +1,5 @@
 body {
-	max-width: 1200px;
+	max-width: 16000px;
 	margin: auto;
 	background: url("../background.png");
 	background-attachment: fixed;
@@ -15,6 +15,10 @@ body {
 	/*background-color: #2f2f2f;*/
 	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
 	border-bottom: 3px solid #b999c8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 
 }
 
@@ -106,7 +110,7 @@ span>a:hover {
 
 p>a:link, p>a:visited {
 	text-decoration: none;
-	color: #ffab70;
+	color: #f5cc8f;
 }
 
 p>a:hover {
@@ -152,6 +156,12 @@ footer>input {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 15px;
+	opacity: .8;
+}
+
+#mwClick:hover{
+	opacity: 1;
+	cursor: pointer;
 }
 
 .social-icons {
@@ -174,7 +184,7 @@ input[type=email] {
 	width: 300px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-    border: 2px solid grey;
+    border: 3px solid #b999c8;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -186,9 +196,16 @@ input[type=submit] {
 	margin-bottom: 20px;
     border: 2px solid white;
     border-radius: 4px;
-    background-color: lightgreen;
+  	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	border: 3px solid #b999c8;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    color: white;
+}
+
+input[type=submit]:hover{
+	cursor: pointer;
+	background-color: grey;
 }
 
 
