@@ -13,38 +13,35 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*background-color: #2f2f2f;*/
 	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
 	border-bottom: 3px solid #b999c8;
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	/*overflow: hidden;*/
 
 }
 
 .dropdown-content{
 	display: none;
 	position: absolute;
-	background-color: #3f3f3f;
-	width: inherit;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,.2);
+	background: linear-gradient(to right, rgba(47,47,47,1) , rgba(47,47,47,1), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,1), rgba(47,47,47,1));
+	width: %100;
 	z-index: 1;
-	border:3px solid #b999c8;
+	border-bottom: 3px solid #b999c8;
+	border-right: 3px solid #b999c8;
+	border-left: 3px solid #b999c8;
+	margin-top: 10px;
 }
-/*#dropdown {
-	overflow: hidden;
-}*/
 
 .dropdown-content a{
 	float: none;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 	text-decoration: none;
 	color: white;
 	display: block;
-	text-align: left;
+	text-align: center;
 
 }
 
@@ -54,6 +51,7 @@ body {
 
 #dropdown:hover .dropdown-content {
 	display: block;
+
 }
 
 
