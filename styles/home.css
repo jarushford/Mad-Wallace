@@ -20,7 +20,40 @@ body {
 	top: 0px;
 	left: 0px;
 	right: 0px;
+	/*overflow: hidden;*/
 
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #3f3f3f;
+	width: inherit;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,.2);
+	z-index: 1;
+	border:3px solid #b999c8;
+}
+/*#dropdown {
+	overflow: hidden;
+}*/
+
+.dropdown-content a{
+	float: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: left;
+
+}
+
+.dropdown-content a:hover{
+	background-color: grey;
+}
+
+#dropdown:hover .dropdown-content {
+	display: block;
 }
 
 
