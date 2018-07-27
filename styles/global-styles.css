@@ -144,10 +144,6 @@ body {
 		border-left: 3px solid #b999c8;
 		margin-top: 0px;
 		padding-top: 0px;
-		-webkit-transition: all 0.5s ease-in-out;
-	    -moz-transition: all 0.5s ease-in-out;
-	    -o-transition: all 0.5s ease-in-out;
-	    transition: all 0.5s ease-in-out;
 	}
 
 	.open {
@@ -158,10 +154,11 @@ body {
 		color: white;
 		display: block;
 		text-align: center;
-		margin-left: 200%;
+		margin-left: 205%;
 		transform: translateY(-7px);
 	}
 }
+
 
 
 /*TEXT STYLING*/
