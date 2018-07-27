@@ -1,25 +1,28 @@
 <html>
 <head>
-	<title>Mad Wallace Home</title>
-	<link rel="stylesheet" type="text/css" href="styles/home.css">
+	<title>Mad Wallace Media</title>
+	<link rel="stylesheet" type="text/css" href="styles/media.css">
 	<link href="styles/global-styles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link href="styles/media.css" rel="stylesheet" type="text/css">
+
 	<script type="text/javascript">
 			function buttonToggle(x) {
     	x.classList.toggle("change");
 		}
 	</script>
-	<script>
-	function dropdown() {
-
-	    }
+	<script type="text/javascript">
+			function menuToggle() {
+			    var element = document.getElementById("collapsed");
+			    element.classList.toggle("menu-content");
+			    element.classList.toggle("open");
+			}
 	</script>
 </head>
-<body>
+	<body>
 	<header class="header">
+		<header class="header">
 		<div class="toolbar">
 			<span class="head"><a href="tour.html" >tour</a></span>
 			<span class="head" id="dropdown"><a href="media.html">media <span class="down-arrow"><sup>&#x25BC;</sup></span></a>
@@ -29,27 +32,29 @@
      			 <a href="media/#">photos</a>
    				 </div>
  			 </span>
-			<span class="head"><a href="home.html" >home</a></span>
+			<span class="head"><a href="home.html">home</a></span>
 			<span class="head"><a href="about.html">about</a></span>
 			<span class="head"><a href="contact.html">contact</a></span>
 			
-			<div id="collapse-drop">
-				<div class="container" onclick="buttonToggle(this)">
+			<div id="collapse-drop" onclick="buttonToggle(this); menuToggle()">
+				<div class="container">
 			  		<div class="bar1"></div>
 			  		<div class="bar2"></div>
 			  		<div class="bar3"></div>
-				</div>
-				<div id="collapsed" class="dropdown-content dropdown-menu-right">
-					<a href="media/#">home</a>
-     			 	<a href="media/#">tour</a>
-     			 	<a href="media/#">media <span class="down-arrow"><sup>&#x25BC;</sup></span></a>
-     			 	<a href="media/#">about</a>
-     			 	<a href="media/#">contact</a>
-     			</div>
+				</div>							
+					<div id="collapsed" class="menu-content">
+						<a class="closed open" href="home.html">home</a>
+	     			 	<a class="closed open" href="tour.html">tour</a>
+	     			 	<a class="closed open" href="media.html">media</a>	
+	     			 	<a class="closed open" href="about.html">about</a>
+	     			 	<a class="closed open" href="contact.html">contact</a>
+	     			</div>     			
      		</div>
-     		
 		</div>
-		<img src="cover.jpg" id="coverPhoto" alt="Band Cover Photo">
+		<div class="coverPhotoContainer">
+			<img src="smaller-cover.jpg" id="smallerCoverPhoto" alt="Smaller Band Cover Photo">
+			<div class="madWallaceText">MAD WALLACE</div>
+		</div>
 	</header>
 	<footer class="footer">
 		<div class="lowerToolbar">
