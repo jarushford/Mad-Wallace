@@ -12,7 +12,14 @@
     	x.classList.toggle("change");
 		}
 	</script>
-	
+	<script type="text/javascript">
+			function menuToggle() {
+			    var element = document.getElementById("collapsed");
+			    element.classList.toggle("menu-content");
+			    element.classList.toggle("open");
+			    element.classList.toggle("closed");
+			}
+	</script>
 
 </head>
 <body>
@@ -26,22 +33,22 @@
      			 <a href="media/#">photos</a>
    				 </div>
  			 </span>
-			<span class="head"><a href="home.html" >home</a></span>
+			<span class="head"><a href="home.html">home</a></span>
 			<span class="head"><a href="about.html">about</a></span>
 			<span class="head"><a href="contact.html">contact</a></span>
 			
 			<div id="collapse-drop">
-				<div class="container" onclick="buttonToggle(this)">
+				<div class="container" onclick="buttonToggle(this); menuToggle()">
 			  		<div class="bar1"></div>
 			  		<div class="bar2"></div>
 			  		<div class="bar3"></div>
 				</div>							
-					<div id="collapsed" class="dropdown-content">
-						<a href="home.html">home</a>
-	     			 	<a href="tour.html">tour</a>
-	     			 	<a href="media.html">media</a>	
-	     			 	<a href="about.html">about</a>
-	     			 	<a href="contact.html">contact</a>
+					<div id="collapsed" class="menu-content">
+						<a class="closed open" href="home.html">home</a>
+	     			 	<a class="closed open" href="tour.html">tour</a>
+	     			 	<a class="closed open" href="media.html">media</a>	
+	     			 	<a class="closed open" href="about.html">about</a>
+	     			 	<a class="closed open" href="contact.html">contact</a>
 	     			</div>     			
      		</div>
      		

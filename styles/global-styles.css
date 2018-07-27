@@ -62,12 +62,6 @@ body {
 	border-bottom: 3px solid #b999c8;
 }
 
-#collapse-drop:hover .dropdown-content {
-	height: 210px;
-	border-bottom: 3px solid #b999c8;
-}
-
-
 
 .dropdown-content a{
 	flex:;
@@ -117,6 +111,15 @@ body {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+@media screen and (min-width:1000px) {
+	.menu-content {
+		display: none;
+	}
+	#collapsed a{
+		display: none;
+	}
+}
+
 @media screen and (max-width:1000px) {
 	.head {
 		display: none;
@@ -129,30 +132,43 @@ body {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.dropdown-content {
-	height: 0px;
-	overflow: hidden;
-	position: absolute;
-	background-color: rgba(47,47,47,.8);
-	width: 19.7%;	
-	z-index: 1;
-	border-right: 3px solid #b999c8;
-	border-left: 3px solid #b999c8;
-	margin-top: 0px;
-	margin-left: 17px;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+
+	.menu-content {
+		height: 0px;
+		overflow: hidden;
+		position: relative;
+		background-color: rgba(47,47,47,.8);
+		width: 19.7%;	
+		z-index: 1;
+		border-right: 3px solid #b999c8;
+		border-left: 3px solid #b999c8;
+		margin-top: 0px;
+		-webkit-transition: all 0.5s ease-in-out;
+	    -moz-transition: all 0.5s ease-in-out;
+	    -o-transition: all 0.5s ease-in-out;
+	    transition: all 0.5s ease-in-out;
+
 	}
-	.dropdown-content a{
-	float: none;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	text-decoration: none;
-	color: white;
-	display: block;
-	text-align: center;
+	.closed {
+		display: none;
+		/*float: none;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+		margin-left: 35%;*/
+	}
+	.open {
+		float: none;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		text-decoration: none;
+		color: white;
+		display: block;
+		text-align: center;
+		margin-left: 35%;
 	}
 }
 
