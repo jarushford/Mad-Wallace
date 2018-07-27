@@ -30,6 +30,16 @@
 
 a {
 	padding: 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+a:visited {
+	color: grey;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .head:hover {
@@ -100,6 +110,18 @@ a {
 
 }
 
+@media screen and (max-width: 1000px) {
+	#coverPhoto {
+		height: auto;
+		width: 100%;
+		margin-top: 50px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+}
+
 @media screen and (max-width: 745px){
 
 
@@ -110,8 +132,8 @@ a {
 	}
 
 	#coverPhoto {
-		height: 133px;
-		width: 400px;
+		height: auto;
+		width: 100%;
 		margin-top: 50px;
 		display: block;
 		margin-left: auto;
