@@ -28,24 +28,6 @@
 	width: 350px;
 }
 
-a {
-	padding: 10px;
-	text-decoration: none;
-	color: grey;
-}
-
-td>a:visited {
-	color: grey;
-}
-
-td>a:hover {
-	text-decoration: underline;
-}
-
-.head:hover {
-	background-color: grey;
-}
-
 .grid {
 	max-width: 1000px;
 	display: grid;

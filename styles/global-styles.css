@@ -18,6 +18,7 @@ body {
 	background: linear-gradient(to right, rgba(47,47,47,.8) , rgba(47,47,47,.9), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,.9), rgba(47,47,47,.8));
 	border-bottom: 3px solid #b999c8;
 	position: fixed;
+	z-index: 1;
 	top: 0px;
 	left: 0px;
 	right: 0px;
@@ -31,7 +32,7 @@ body {
 	position: absolute;
 	background-color: grey;
 	width: 19.7%;	
-	z-index: 1;
+	z-index: 2;
 	border-right: 3px solid #b999c8;
 	border-left: 3px solid #b999c8;
 	margin-top: 10px;
@@ -65,6 +66,10 @@ body {
 
 .dropdown-content a{
 	flex:;
+}
+
+.head:hover {
+	background-color: grey;
 }
 
 
@@ -163,6 +168,19 @@ body {
 
 /*TEXT STYLING*/
 
+a {
+	padding: 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+td>a:visited {
+	color: grey;
+}
+
+td>a:hover {
+	text-decoration: underline;
+}
 
 
 h2 {
