@@ -1,0 +1,28 @@
+#coverPhoto {
+	height: 400px;
+	width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about-head {
+	width:100%;
+	height: auto;
+}
+
+
+.bio>p {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	font-size: .9em;
+	text-indent: 10px;
+}
+
+
+i {
+	padding:10px;
+}
