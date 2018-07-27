@@ -6,13 +6,25 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script type="text/javascript">
+			function buttonToggle(x) {
+    	x.classList.toggle("change");
+		}
+	</script>
+	<script>
+	function dropdown() {
+
+	    }
+	</script>
+
+
 </head>
 <body>
 	<header class="header">
 		<div class="toolbar">
 			<span class="head"><a href="tour.html" >tour</a></span>
-			<span class="head" id="dropdown"><a href="media.html">media</a>
+			<span class="head" id="dropdown"><a href="media.html">media <span class="down-arrow"><sup>&#x25BC;</sup></span></a>
    				<div class="dropdown-content dropdown-menu-right">
       			 <a href="media/#">music</a>
      			 <a href="media/#">video</a>
@@ -22,6 +34,22 @@
 			<span class="head"><a href="home.html" >home</a></span>
 			<span class="head"><a href="about.html">about</a></span>
 			<span class="head"><a href="contact.html">contact</a></span>
+			
+			<div id="collapse-drop">
+				<div class="container" onclick="buttonToggle(this)">
+			  		<div class="bar1"></div>
+			  		<div class="bar2"></div>
+			  		<div class="bar3"></div>
+				</div>
+				<div id="collapsed" class="dropdown-content dropdown-menu-right">
+					<a href="media/#">home</a>
+     			 	<a href="media/#">tour</a>
+     			 	<a href="media/#">media <span class="down-arrow"><sup>&#x25BC;</sup></span></a>
+     			 	<a href="media/#">about</a>
+     			 	<a href="media/#">contact</a>
+     			</div>
+     		</div>
+     		
 		</div>
 		<img src="cover.jpg" id="coverPhoto" alt="Band Cover Photo">
 	</header>
@@ -73,13 +101,9 @@
 				<a href="https://www.youtube.com/watch?v=_lvB2tHSEG4" target="_blank" title="???"><i class="fas fa-bath"></i></a>
 			</p>
 		</div>
-			<a href="#top"/><img src="mwlogo-blue.png" id="mwClick" alt="Click to Top" height="65px" width="50px"></a>
+			<span><a href="#top"/><img src="mwlogo-blue.png" id="mwClick" alt="Click to Top" height="65px" width="50px"></a></span>
 			<p id="copyright">copyright &copy; 2018</p>
 	</footer>
-
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

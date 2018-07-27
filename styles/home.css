@@ -26,7 +26,7 @@ body {
 
 }
 
-.dropdown-content{
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: grey;
@@ -55,13 +55,26 @@ body {
 	background: linear-gradient(to right, rgba(47,47,47,1) , rgba(47,47,47,1), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,1), rgba(47,47,47,1));
 }
 
+.collapse-content a:hover{
+	background: linear-gradient(to right, rgba(47,47,47,1) , rgba(47,47,47,1), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,1), rgba(47,47,47,1));
+}
+
 #dropdown:hover .dropdown-content {
 	display: flex;
+}
+
+#collapse-drop:hover .dropdown-content {
+	display: inline-flex;
 }
 
 .dropdown-content a{
 	flex:;
 }
+
+
+
+
+
 
 .head {
 	font-size: 30px;
@@ -81,6 +94,54 @@ body {
 }
 
 
+/*MENU COLLAPSE*/
+
+
+.container {
+    display: none;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+@media screen and (max-width:1000px) {
+	.head {
+		display: none;
+	}
+	.container {
+		display: inline-block;
+		cursor: pointer;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
 
 
 /*TEXT STYLING*/
@@ -150,7 +211,9 @@ span>a:link, span>a:visited {
 	color: white;
 }
 
-
+.down-arrow {
+	font-size: 10px;
+}
 
 
 
@@ -336,6 +399,48 @@ div>input {
 	justify-content: center;
 }
 
+.fa-facebook-square {
+	transition: all 0.3s ease 0s;
+}
+.fa-facebook-square:hover {
+	transform: translateY(-2px);
+}
+
+.fa-instagram {
+	transition: all 0.3s ease 0s;
+}
+.fa-instagram:hover {
+	transform: translateY(-2px);
+}
+
+.fa-spotify {
+	transition: all 0.3s ease 0s;
+}
+.fa-spotify:hover {
+	transform: translateY(-2px);
+}
+
+.fa-envelope {
+	transition: all 0.3s ease 0s;
+}
+.fa-envelope:hover {
+	transform: translateY(-2px);
+}
+
+.fa-youtube {
+	transition: all 0.3s ease 0s;
+}
+.fa-youtube:hover {
+	transform: translateY(-2px);
+}
+
+.fa-bath {
+	transition: all 0.3s ease 0s;
+}
+.fa-bath:hover {
+	transform: translateY(-2px);
+}
+
 #copyright {
 	text-align: center;
 	font-size: 12px;
@@ -379,6 +484,5 @@ input[type=submit]:hover{
 	background-color: grey;
 	transform: translateY(-3px);
 }
-
 
 
