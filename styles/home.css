@@ -102,35 +102,49 @@ a {
 
 @media screen and (max-width: 745px){
 
+
 	.grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	align-items: center;
+	grid-template-columns: 400px;
+	grid-template-rows: 470px 1fr 1fr 1fr;
+	}
+
+	#coverPhoto {
+		height: 133px;
+		width: 400px;
+		margin-top: 50px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.news {
-		grid-row:1/2; 
+		grid-row:1/4;
+		grid-column: 1/1;
 	}
 
 
 	.listen {
-		grid-row:3/4; 
+		grid-row:3/4;
+		grid-column: 1/1; 
+		
 	}
 
+	iframe {
+		width: 350px;
+		height: 200px;
+	}
 
 	.watch {
-		grid-row:4/5; 
+		grid-row:4/4;
+		grid-column: 1/1;
 	}
 
 
 	.tour {
-		grid-row:2/3; 
+		grid-row:2/4;
+		grid-column: 1/1;
+		
 	}
 
 }
-
-#youtube {
-		width: 600px;
-		height: 400px;
-}
-
 
