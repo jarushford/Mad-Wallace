@@ -273,7 +273,9 @@
 }
 
 .vid-item .desc {
-	color: #21A1D2;
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	margin-top:5px;
 }
@@ -291,8 +293,8 @@
 	border: 3px solid #b999c8;
 	border-radius: 25px;
 	transition: all 0.3s ease 0s;
-	left: -25px;
-	top: -130px;
+	left: -50px;
+	top: -150px;
 	z-index: 99;
 	cursor: pointer;
 }
@@ -305,8 +307,8 @@
 	border: 3px solid #b999c8;
 	border-radius: 25px;
 	transition: all 0.3s ease 0s;
-	right: -25px;
-	top: -130px;
+	right: -50px;
+	top: -150px;
 	z-index:100;
 	cursor: pointer;
 }
@@ -325,19 +327,19 @@
 	background-color: grey;
 }
 
-@media (max-width: 624px) {
+@media (max-width: 1000px) {
 	.arrows {
 		position:relative;
 		margin: 0 auto;
 		width:96px;
 	}
 	.arrow-left {
-		left: 0;
+		left: -10px;
 		top: -20px;
 	}
 
 	.arrow-right {
-		right: 0;
+		right: -10px;
 		top: -20px;
 	}
 }
