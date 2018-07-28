@@ -63,8 +63,6 @@ h3>span {
 .biopic {
 	width: 400px;
 	height: auto;
-	display: inline-block;
-	/*position: absolute;*/
 }
 
 .picgrid {
@@ -84,74 +82,26 @@ h3>span {
 
 
 .hvrbox-text {
+	opacity: 0;
+	transform: translateY(30px);
 	position: absolute;
-	width: 350px;
-	background-color: rgba(30,30,30,.75);
+	margin-left: 5.5%;
+	margin-top: 45%;
+	width: 315px;
+	background-color: rgba(30,30,30,.85);
     border-radius: 25px;
     color: #cecece;
     padding: 20px;
     font-family: 'PT Sans', sans-serif;
     line-height: 25px;
     letter-spacing: 1.5px;
+    transition: 1s;
 }
 
-
-/*.sabettabio {
-    position: absolute;
-    top: 220%;
-    right: 55%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
+.bio-container:hover .hvrbox-text {
+	transform: translateY(0px);
+	opacity: 1;
 }
-
-.lauerbio {
-    position: absolute;
-    top: 222%;
-    right: 17%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}
-
-.davidbio {
-    position: absolute;
-    top: 2300px;
-    right: 600px;
-    max-width: 300px;
-    max-height:450px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}
-
-.jamiebio {
-    position: absolute;
-    top: 315%;
-    right: 17%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}*/
 
 
 
