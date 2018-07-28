@@ -19,6 +19,14 @@
 			    element.classList.toggle("open");
 			}
 	</script>
+	<script type="text/javascript">
+		function hover(element) {
+			element.setAttribute('src', 'about-head-alt.jpg');
+		}
+		function unhover(element) {
+			element.setAttribute('src', 'about-head.jpg');
+		}
+	</script>
 
 </head>
 <body>
@@ -58,8 +66,11 @@
 		</div>
 	</header>
 
-	<img src="about-head.jpg" id="about-head"/>
-	
+	<div class="abouthead">
+		<img src="about-head.jpg" id="aboutHead"/>
+		<img id="goggles" src="goggles.png" onmouseover="hover(aboutHead)" onmouseout="unhover(aboutHead)"/>
+	</div>
+
 	<h1 class="aboutband">about the band</h1>
 
 	<div class="bio">

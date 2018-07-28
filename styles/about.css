@@ -6,10 +6,29 @@
 	margin-right: auto;
 }
 
-#about-head {
+
+#aboutHead {
 	width:100%;
 	height: auto;
+	position: relative;
+	display: inherit;
 }
+
+#alt {
+	width:100%;
+	height: auto;
+	
+}
+
+#goggles {
+	width: 4%;
+	height: auto;
+	position: absolute;
+	transform: translateY(-120%);
+}
+
+
+
 
 .aboutband {
 	color: #ccced1;
