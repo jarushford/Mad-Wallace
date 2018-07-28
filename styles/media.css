@@ -32,7 +32,6 @@
 }
 
 
-
 #spotifyPlayer{
 	width: 90%; 
 	height:333px;
@@ -64,8 +63,34 @@
 
 #hookline:hover, #twenty804:hover {
 	opacity: .7;
+	transform: translateY(-2px);
 	
 } 
+
+.insta{
+	text-align: center;
+}
+
+#instaLink {
+	display: inline-block;
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	margin: 30px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 7px 24px 7px 24px;
+	letter-spacing: 3px;
+	font-size: 20;
+	color: white;
+	border: 3px solid #b999c8;
+	border-radius: 25px;
+	transition: all 0.3s ease 0s;
+}
+
+#instaLink:hover {
+	transform: translateY(-2px);
+	background-color: grey;
+}
+
+
 
 @supports (grid-area: auto){
 
@@ -101,11 +126,6 @@
 	margin-right: auto;
 	margin-left: auto;;
 	}
-
-#hookline:hover, #twenty804:hover {
-	transform: translateY(-2px);
-	opacity: .7;
-	} 
 
 
 
@@ -151,11 +171,6 @@
 		margin: 10px;
 		}
 
-		#hookline:hover, #twenty804:hover {
-		transform: translateY(-2px);
-		opacity: .7;
-		}
-
 			@media screen and (min-width: 1100px){	
 			.getmusic {
 				margin:auto;
@@ -189,10 +204,6 @@
 				margin: 10px;
 			}
 
-			#hookline:hover, #twenty804:hover {
-				transform: translateY(-2px);
-				opacity: .7;
-			} 
 		}
 	}
 
