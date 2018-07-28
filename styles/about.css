@@ -103,7 +103,25 @@ h3>span {
 	opacity: 1;
 }
 
+.bio-container:hover .carrot {
+	opacity: 0;
+}
 
+.carrot {
+	transform: translateY(-65px);
+	width: 56px;
+	height: 56px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 4em;
+	background-color: rgba(150,150,150,.85);
+    border-radius: 50%;
+	color: #cecece;
+	font-family: 'PT Sans', sans-serif;
+	opacity: 1;
+	transition: 1s;
+}
 
 
 
