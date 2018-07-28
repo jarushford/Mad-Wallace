@@ -164,6 +164,35 @@ body {
 	}
 }
 
+/*COVER PHOTO STYLING*/
+
+.smallerCoverPhoto {
+	height: 18.5vw;
+	width: 100vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-bottom: 3px solid #b999c8;
+}
+
+.coverPhotoContainer {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.madWallaceText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Open Sans', sans-serif;
+	width: 80%;
+	font-size:calc(6px + 4.7vw);
+	letter-spacing: 3vw;
+	padding: 1px;
+}
 
 
 /*TEXT STYLING*/
@@ -388,4 +417,5 @@ input[type=submit]:hover{
 	background-color: grey;
 	transform: translateY(-3px);
 }
+
 

@@ -1,4 +1,4 @@
-#smallerCoverPhoto {
+/*#smallerCoverPhoto {
 	height: 18.5vw;
 	width: 100vw;
 	display: block;
@@ -12,12 +12,13 @@
 	position: relative;
 	text-align: center;
 	color: white;
-}
+}*/
 
-body{
-	font-size: .75em; // 12px
+/*body{
+	font-size: .75em; // 12px;
 }
-.madWallaceText{
+*/
+/*.madWallaceText{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -28,3 +29,4 @@ body{
 	letter-spacing: 3vw;
 	padding: 1px;
 }
+*/
