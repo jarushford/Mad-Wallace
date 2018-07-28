@@ -68,6 +68,67 @@ h3>span {
 }
 
 
+.sabettabio {
+    position: absolute;
+    top: 220%;
+    right: 55%;
+    max-width: 300px;
+    background-color: rgba(30,30,30,.75);
+    border-radius: 25px;
+    color: #cecece;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.lauerbio {
+    position: absolute;
+    top: 222%;
+    right: 17%;
+    max-width: 300px;
+    background-color: rgba(30,30,30,.75);
+    border-radius: 25px;
+    color: #cecece;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.davidbio {
+    position: absolute;
+    top: 315%;
+    right: 55%;
+    max-width: 300px;
+    background-color: rgba(30,30,30,.75);
+    border-radius: 25px;
+    color: #cecece;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.jamiebio {
+    position: absolute;
+    top: 315%;
+    right: 17%;
+    max-width: 300px;
+    background-color: rgba(30,30,30,.75);
+    border-radius: 25px;
+    color: #cecece;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+
 i {
 	padding:5px;
 }
