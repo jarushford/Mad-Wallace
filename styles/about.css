@@ -24,6 +24,8 @@
 				 0px 5px 5px rgba(0,0,0,0.1);
 }
 
+
+
 .bio>p {
 	width: 80%;
 	margin-right: 10%;
@@ -40,20 +42,10 @@
 	border-radius: 20px;
 }
 
-.biopic {
-	width: 400px;
-	height: auto;
-}
 
-.picgrid {
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 585px 110px 585px 110px;
-	justify-items: center;
-	max-width: 900px;
-}
+
+
+
 
 .picgrid>h3 {
 	text-transform: uppercase;
@@ -68,8 +60,43 @@ h3>span {
 	letter-spacing: 3px;
 }
 
+.biopic {
+	width: 400px;
+	height: auto;
+	display: inline-block;
+	/*position: absolute;*/
+}
 
-.sabettabio {
+.picgrid {
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 585px 110px 585px 110px;
+	justify-items: center;
+	max-width: 900px;
+}
+
+.bio-container {
+	position: relative;
+	display: inherit;
+}
+
+
+.hvrbox-text {
+	position: absolute;
+	width: 350px;
+	background-color: rgba(30,30,30,.75);
+    border-radius: 25px;
+    color: #cecece;
+    padding: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+
+/*.sabettabio {
     position: absolute;
     top: 220%;
     right: 55%;
@@ -99,9 +126,10 @@ h3>span {
 
 .davidbio {
     position: absolute;
-    top: 315%;
-    right: 55%;
+    top: 2300px;
+    right: 600px;
     max-width: 300px;
+    max-height:450px;
     background-color: rgba(30,30,30,.75);
     border-radius: 25px;
     color: #cecece;
@@ -123,7 +151,7 @@ h3>span {
     font-family: 'PT Sans', sans-serif;
     line-height: 25px;
     letter-spacing: 1.5px;
-}
+}*/
 
 
 
@@ -131,5 +159,5 @@ h3>span {
 
 
 i {
-	padding:5px;
+	padding:1px;
 }
