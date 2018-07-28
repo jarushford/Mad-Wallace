@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<script src="https://snapwidget.com/js/snapwidget.js"></script>
+	<link rel=”stylesheet” href=”css/font-awesome.min.css” >
+	<script src="jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 			function buttonToggle(x) {
     	x.classList.toggle("change");
@@ -66,12 +68,75 @@
 	</div>
 	<div class="media" id="video">
 		<h1>video</h1>
+		<div class="full-container">
+
+  		<!-- THE YOUTUBE PLAYER -->
+  		<div class="vid-container">
+		    <iframe id="vid_frame" src="https://www.youtube.com/embed/uLFcwhDzJCU?rel=0&showinfo=0&autohide=1" frameborder="0" width="560" height="315"></iframe>
+		</div>
+
+		<!-- THE PLAYLIST -->
+		<div class="vid-list-container">
+	        <div class="vid-list">
+	         	
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/uLFcwhDzJCU?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/uLFcwhDzJCU/0.jpg"></div>
+ 	              <div class="desc">Waterfront/I Want You Back live @ Herman's Hideaway</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9vxB-Tzf-X0?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/9vxB-Tzf-X0/0.jpg"></div>
+ 	              <div class="desc">Okapi live @ Herman's Hideaway</div>
+ 	            </div>
+ 	          
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LLWCuw1UuIQ?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/LLWCuw1UuIQ/0.jpg"></div>
+ 	              <div class="desc">I Am Not Me live @ Herman's Hideaway</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LasnFhkkaxg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/LasnFhkkaxg/0.jpg"></div>
+ 	              <div class="desc">Mario Medley live @ Llamapalooza</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TBrxTDaHaZA?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/TBrxTDaHaZA/0.jpg"></div>
+ 	              <div class="desc">Sic Beets</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xMbexTFF6J4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/xMbexTFF6J4/0.jpg"></div>
+ 	              <div class="desc">Bitter End live at Larimer Lounge</div>
+ 	            </div>
+ 	          
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/sYBdtb7Swko?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/sYBdtb7Swko/0.jpg"></div>
+ 	              <div class="desc">Best Denver Burger ep. 1</div>
+ 	            </div>
+
+ 	            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/s1rZAwzgfx0?autoplay=1&rel=0&showinfo=0&autohide=1'">
+ 	              <div class="thumb"><img src="http://img.youtube.com/vi/s1rZAwzgfx0/0.jpg"></div>
+ 	              <div class="desc">A Delicious Dinner</div>
+ 	            </div>
+
+	 	    </div>
+        </div>
+
+        <!-- LEFT AND RIGHT ARROWS -->
+        <div class="arrows">
+        	<div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+        	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        </div>
+
+  	</div>
+
 	</div>
 	<div class="media" id="photos">
 		<h1>photos</h1>
 			<div class="insta">
 			<iframe src="https://snapwidget.com/embed/576526" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
-			<a id="instaLink" href="https://www.instagram.com/mad.wallace/" target="_blank" title="instagram">follow</a>
+			<a id="instaLink" href="https://www.instagram.com/mad.wallace/" target="_blank" title="instagram">follow on instagram</a>
 			</div>
 	</div>
 	<footer class="footer">
@@ -91,5 +156,22 @@
 			<span><a href="#top"/><img src="mwlogo-blue.png" id="mwClick" alt="Click to Top" height="65px" width="50px"></a></span>
 			<p id="copyright">copyright &copy; 2018</p>
 	</footer>
+	  	<!-- JS FOR SCROLLING THE ROW OF THUMBNAILS -->
+  	<script type="text/javascript">
+  		$(document).ready(function () {
+		    $(".arrow-right").bind("click", function (event) {
+		        event.preventDefault();
+		        $(".vid-list-container").stop().animate({
+		            scrollLeft: "+=336"
+		        }, 750);
+		    });
+		    $(".arrow-left").bind("click", function (event) {
+		        event.preventDefault();
+		        $(".vid-list-container").stop().animate({
+		            scrollLeft: "-=336"
+		        }, 750);
+		    });
+		});
+  	</script>
 </body>
 </html>
