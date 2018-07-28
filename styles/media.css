@@ -67,11 +67,11 @@
 	
 } 
 
-.insta{
+.insta, .follow-youtube, .follow-spotify{
 	text-align: center;
 }
 
-#instaLink {
+#instaLink, #youLink, #spotLink {
 	display: inline-block;
 	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
 	margin: 30px;
@@ -85,7 +85,7 @@
 	transition: all 0.3s ease 0s;
 }
 
-#instaLink:hover {
+#instaLink:hover, #youLink:hover, #spotlink:hover {
 	transform: translateY(-2px);
 	background-color: grey;
 }
