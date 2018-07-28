@@ -167,7 +167,7 @@ body {
 /*COVER PHOTO STYLING*/
 
 .smallerCoverPhoto {
-	height: 18.5vw;
+	height: 16.5vw;
 	width: 100vw;
 	display: block;
 	margin-left: auto;
@@ -213,7 +213,7 @@ td>a:hover {
 
 
 h2 {
-	font-size: 32px;
+	fopont-size: 32px;
 }
 
 h3 {

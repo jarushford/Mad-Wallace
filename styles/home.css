@@ -1,12 +1,13 @@
 /*FOR HEADING/BODY/FOOTING/TEXT sTYLES see the global-styles.css sheet*/
-/*
-#coverPhoto {
-	height: 400px;
-	width: 1000px;
+.largerCoverPhoto {
+	height: 25vw;
+	width: 114vw;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}*/
+	margin-top: 50px;
+	border-bottom: 3px solid #b999c8;
+}
 
 /*ELEMENT SPACING AND MISC*/
 
