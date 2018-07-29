@@ -143,6 +143,53 @@ h3>span {
 }
 
 
+@media screen and (max-width: 830px) {
+
+	.picgrid {
+		display: grid;
+		margin-left: auto;
+		margin-right: auto;
+		grid-template-columns: 100%;
+		grid-template-rows: 585px 110px 585px 110px 585px 110px 585px 110px;
+		justify-items: center;
+		max-width: 400px;
+	}
+
+	.sabettapic {
+		grid-row: 1/8;
+		grid-column: 1/1;
+	}
+	.sabetta {
+		grid-row: 2/8;
+		grid-column: 1/1;
+	}
+	.lauerpic {
+		grid-row: 3/8;
+		grid-column: 1/1;
+	}
+	.lauer {
+		grid-row: 4/8;
+		grid-column: 1/1;
+	}
+	.davidpic {
+		grid-row: 5/8;
+		grid-column: 1/1;
+	}
+	.david {
+		grid-row: 6/8;
+		grid-column: 1/1;
+	}
+	.jamiepic {
+		grid-row: 7/8;
+		grid-column: 1/1;
+	}
+	.jamie {
+		grid-row: 8/8;
+		grid-column: 1/1;
+	}
+	
+}
+
 
 
 i {
