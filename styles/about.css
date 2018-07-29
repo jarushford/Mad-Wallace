@@ -6,10 +6,29 @@
 	margin-right: auto;
 }
 
-#about-head {
+
+#aboutHead {
 	width:100%;
 	height: auto;
+	position: relative;
+	display: inherit;
 }
+
+#alt {
+	width:100%;
+	height: auto;
+	
+}
+
+#goggles {
+	width: 4%;
+	height: auto;
+	position: absolute;
+	transform: translateY(-120%);
+}
+
+
+
 
 .aboutband {
 	color: #ccced1;
@@ -63,8 +82,6 @@ h3>span {
 .biopic {
 	width: 400px;
 	height: auto;
-	display: inline-block;
-	/*position: absolute;*/
 }
 
 .picgrid {
@@ -84,77 +101,94 @@ h3>span {
 
 
 .hvrbox-text {
+	opacity: 0;
+	transform: translateY(30px);
 	position: absolute;
-	width: 350px;
-	background-color: rgba(30,30,30,.75);
+	margin-left: 5.5%;
+	margin-top: 45%;
+	width: 315px;
+	background-color: rgba(30,30,30,.85);
     border-radius: 25px;
     color: #cecece;
     padding: 20px;
     font-family: 'PT Sans', sans-serif;
     line-height: 25px;
     letter-spacing: 1.5px;
+    transition: 1s;
+}
+
+.bio-container:hover .hvrbox-text {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.bio-container:hover .carrot {
+	opacity: 0;
+}
+
+.carrot {
+	transform: translateY(-65px);
+	width: 56px;
+	height: 56px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 4em;
+	background-color: rgba(150,150,150,.85);
+    border-radius: 50%;
+	color: #cecece;
+	font-family: 'PT Sans', sans-serif;
+	opacity: 1;
+	transition: 1s;
 }
 
 
-/*.sabettabio {
-    position: absolute;
-    top: 220%;
-    right: 55%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
+@media screen and (max-width: 830px) {
+
+	.picgrid {
+		display: grid;
+		margin-left: auto;
+		margin-right: auto;
+		grid-template-columns: 100%;
+		grid-template-rows: 585px 110px 585px 110px 585px 110px 585px 110px;
+		justify-items: center;
+		max-width: 400px;
+	}
+
+	.sabettapic {
+		grid-row: 1/8;
+		grid-column: 1/1;
+	}
+	.sabetta {
+		grid-row: 2/8;
+		grid-column: 1/1;
+	}
+	.lauerpic {
+		grid-row: 3/8;
+		grid-column: 1/1;
+	}
+	.lauer {
+		grid-row: 4/8;
+		grid-column: 1/1;
+	}
+	.davidpic {
+		grid-row: 5/8;
+		grid-column: 1/1;
+	}
+	.david {
+		grid-row: 6/8;
+		grid-column: 1/1;
+	}
+	.jamiepic {
+		grid-row: 7/8;
+		grid-column: 1/1;
+	}
+	.jamie {
+		grid-row: 8/8;
+		grid-column: 1/1;
+	}
+	
 }
-
-.lauerbio {
-    position: absolute;
-    top: 222%;
-    right: 17%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}
-
-.davidbio {
-    position: absolute;
-    top: 2300px;
-    right: 600px;
-    max-width: 300px;
-    max-height:450px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}
-
-.jamiebio {
-    position: absolute;
-    top: 315%;
-    right: 17%;
-    max-width: 300px;
-    background-color: rgba(30,30,30,.75);
-    border-radius: 25px;
-    color: #cecece;
-    padding: 20px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-}*/
-
-
-
 
 
 
