@@ -148,13 +148,13 @@ h3>span {
 	}
 
 	.bio-container {
-	position: relative;
-	display: block;
-}
+		position: relative;
+		display: block;
+	}
 
-.hvrbox-text {
-	top: 25px;
-}
+	.hvrbox-text {
+		top: 20px;
+	}
 
 	.sabettapic {
 		grid-row: 1/8;
@@ -188,8 +188,25 @@ h3>span {
 		grid-row: 8/8;
 		grid-column: 1/1;
 	}
-	
-	
+
+
+	.hvrbox-text {
+	    -webkit-transition: none !important;
+	    -moz-transition: none !important;
+	    -o-transition: none !important;
+	    -ms-transition: none !important;
+	    transition: none !important;
+	}
+
+	.carrot {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+
 }
 
 
