@@ -74,6 +74,10 @@
 	grid-column:1/2; 
 }
 
+.venue {
+	text-align: center;
+}
+
 #spotifyPlayer{
 	height: 392px;
 	width: 350px;
