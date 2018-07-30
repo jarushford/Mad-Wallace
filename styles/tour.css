@@ -17,6 +17,111 @@
 	margin-left: auto;
 }
 
+td {
+	border-top: 1px solid rgba(155,155,155,.2);
+	background: rgba(155,155,155,.4);
+}
+
+th {
+	font-size: 24px;
+	padding-bottom: 10px;
+	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
+				 0px 8px 18px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+ .day {
+ 	font-size: 20px;
+ }
+
 .date {
 	font-size: 25px;
+	text-align: center;
+	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
+				 0px 8px 18px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+				 border-top-left-radius: 14px;
+				 border-bottom-left-radius: 14px;
 }
+
+.location {
+	text-align: center;
+	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
+				 0px 8px 18px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.venue {
+	text-align: center;
+	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
+				 0px 8px 18px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.venue>a:link, .venue>a:visited {
+	text-decoration: none;
+	color: rgb(190,190,190);
+}
+
+.venue>a:hover {
+	text-decoration: underline;
+}
+
+.tix {
+	text-align: center;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+
+.tix-button {
+	height: 30px;
+	width: 100px;
+	margin: 10px;
+    border-radius: 4px;
+  	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 45px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4),
+				 0px 4px 4px rgba(0,0,0,0.1),
+				 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.tix-button:hover{
+	cursor: pointer;
+	background-color: grey;
+	transform: translateY(-1.5px);
+}
+
+
+@media screen and (max-width: 700px) {
+	#tourTable {
+		width: 75%;
+	}
+	.tix-button {
+		width: 80px;
+		height: 25px;
+		font-size: 12px;
+	}
+	.day {
+		font-size: 15px;
+	}
+	.date {
+		font-size: 20px;
+	}
+	.location {
+		font-size: 15px;
+	}
+	.venue>a:link, .venue>a:visited {
+		font-size: 15px;
+	}
+}
+
+
+
+
+
+
