@@ -95,3 +95,33 @@ th {
 	background-color: grey;
 	transform: translateY(-1.5px);
 }
+
+
+@media screen and (max-width: 700px) {
+	#tourTable {
+		width: 75%;
+	}
+	.tix-button {
+		width: 80px;
+		height: 25px;
+		font-size: 12px;
+	}
+	.day {
+		font-size: 15px;
+	}
+	.date {
+		font-size: 20px;
+	}
+	.location {
+		font-size: 15px;
+	}
+	.venue>a:link, .venue>a:visited {
+		font-size: 15px;
+	}
+}
+
+
+
+
+
+
