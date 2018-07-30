@@ -1,0 +1,47 @@
+.contact{
+	text-align: center;
+}
+
+.contact-container{
+	width:%100;
+}
+.contact-info, .message{
+	width: %100;
+}
+
+input[type="text"]{	
+	border: 3px solid #b999c8;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+textarea {
+	border: 3px solid #b999c8;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+h3 a{
+	padding: 2px;
+	color: #b999c8;
+	text-decoration: underline;
+}
+
+h3 a:hover {
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder{
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+
+::-moz-placeholder{
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+
+::-ms-input-placeholder{
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
