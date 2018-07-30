@@ -60,15 +60,17 @@
 	<div class="contact">
 		<div class="message">
 			<h2>get in touch</h2>
-			<input id="name" type="text" name="name" placeholder="*insert your name" size="48">
-			<input id="email" type="text" name="email" placeholder="*insert your email" size="48">
-			<textarea name="message-us" cols="50" rows="12" placeholder="Booking? Questions for the band? What is Lauer's eyebrow regimen? What is the secret to Chef Sabetta's beans?? Ask away"></textarea>
-			<input type="submit" value="send"> 
+			<form method="post" name="form_message" action="form-to-email.php">
+				<input id="name" type="text" name="name" placeholder="*insert your name" size="48" maxlength="24">
+				<input id="email" type="text" name="email" placeholder="*insert your email" size="48" maxlength="40">
+				<textarea name="message" cols="50" rows="12" placeholder="Booking? Questions for the band? What is Lauer's eyebrow regimen? What is the secret to Chef Sabetta's beans?? Ask away"></textarea>
+				<input type="submit" value="send" name="message_send"> 
+			</form>
 		</div>
 		<div class="cover-idea">
 				<h2>submit a cover request</h2>
 				<input id="cover-submission" type="text" name="text">
-				<input type="submit" value="submit">
+				<input type="submit" value="submit" name="cover_submit">
 		</div>
 		<div class="contact-info">
 				<h2>contact info</h2>
