@@ -6,6 +6,7 @@
 	margin-top: 30px;
 	padding-left: 10px;
 	height: 70px;
+	letter-spacing: 2px;
 	text-shadow: 0px 3px 2px rgba(0,0,0,0.1),
 				
 				 0px 5px 5px rgba(0,0,0,0.1);
@@ -24,7 +25,7 @@ td {
 
 th {
 	font-size: 24px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	text-shadow: 0px 3px 4px rgba(0,0,0,0.4),
 				 0px 8px 18px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
@@ -118,10 +119,49 @@ th {
 	.venue>a:link, .venue>a:visited {
 		font-size: 15px;
 	}
+	th {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+}
+
+h4 {
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 12px;
+}
+
+.booking {
+	margin-top: 70px;
+	letter-spacing: 1.2px;
 }
 
 
-
+.email-button {
+	height: 35px;
+	width: 250px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    border-radius: 4px;
+  	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 45px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4),
+				 0px 4px 4px rgba(0,0,0,0.1),
+				 0px 5px 5px rgba(0,0,0,0.1);
+}
+.email-button:hover{
+	cursor: pointer;
+	background-color: grey;
+	transform: translateY(-2px);
+}
 
 
 
