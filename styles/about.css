@@ -1,12 +1,3 @@
-#coverPhoto {
-	height: 400px;
-	width: 1000px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
 #aboutHead {
 	width:100%;
 	height: auto;
@@ -101,6 +92,7 @@ h3>span {
 
 
 .hvrbox-text {
+	z-index: 99;
 	opacity: 0;
 	transform: translateY(30px);
 	position: absolute;
@@ -155,6 +147,15 @@ h3>span {
 		max-width: 400px;
 	}
 
+	.bio-container {
+	position: relative;
+	display: block;
+}
+
+.hvrbox-text {
+	top: 25px;
+}
+
 	.sabettapic {
 		grid-row: 1/8;
 		grid-column: 1/1;
@@ -187,6 +188,7 @@ h3>span {
 		grid-row: 8/8;
 		grid-column: 1/1;
 	}
+	
 	
 }
 
