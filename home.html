@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
+	<script src="global.js" type="text/javascript"></script>
 	<script type="text/javascript">
 			function buttonToggle(x) {
     	x.classList.toggle("change");
@@ -108,8 +108,8 @@
 		<div class="lowerToolbar">
 			<h3>Subscribe for tour updates and more!</h3>
 			<form method="post" name="email_list" action="https:/formspree.io/madwallaceband@gmail.com">
-				<input type="email" name="email" placeholder="email address" /><br >
-				<input type="submit" value="Subscribe"/>	
+				<input type="email" name="email" placeholder="email address" id="email-input"/><br >
+				<input type="submit" value="Subscribe" id="suscribe-button" onClick="this.form.reset()" />	
 			</form>
 			<p class="social-icons">
 				<a href="https://www.facebook.com/madwallaceband/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
