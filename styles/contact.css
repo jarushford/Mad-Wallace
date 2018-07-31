@@ -2,7 +2,7 @@
 	text-align: center;
 }
 
-form input, form textarea{
+form[class="contact-form"] input, form textarea{
 	margin-bottom: 10px;
 }
 
