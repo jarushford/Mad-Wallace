@@ -215,7 +215,7 @@
 .full-container {
   			width: 100%;
   			max-width: 854px;
-  			min-width: 440px;
+  			min-width: 380px;
   			margin: 0 auto;
   		}
 
@@ -226,7 +226,7 @@
 	padding-top: 30px; 
 	height: 0; 
 }
-
+	
 .vid-container iframe,
 .vid-container object,
 .vid-container embed {
@@ -332,7 +332,7 @@
 	.arrows {
 		position:relative;
 		margin: 0 auto;
-		width:96px;
+		width:100px;
 	}
 	.arrow-left {
 		left: -10px;
@@ -342,6 +342,10 @@
 	.arrow-right {
 		right: -10px;
 		top: -20px;
+	}
+
+	#youLink{
+		margin-top: 40px;
 	}
 }
 
