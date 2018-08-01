@@ -1,7 +1,7 @@
 body {
 	max-width: 16000px;
 	margin: auto;
-	background: url("../background.png");
+	background: url("../images/background.png");
 	background-attachment: fixed;
 	background-size: cover;
 }
