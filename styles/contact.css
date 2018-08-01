@@ -1,16 +1,15 @@
+/*formatting forms*/
+
 .contact{
 	text-align: center;
 }
 
-form[class="contact-form"] input, form textarea{
-	margin-bottom: 10px;
-}
-
-.contact-container{
-	width:%100;
-}
 .contact-info, .message{
 	width: %100;
+}
+
+form[class="contact-form"] input, form textarea{
+	margin-bottom: 10px;
 }
 
 input[type="text"]{	
@@ -25,15 +24,8 @@ textarea {
 	padding: 10px;
 }
 
-h3 a{
-	padding: 2px;
-	color: #b999c8;
-	text-decoration: underline;
-}
 
-h3 a:hover {
-	text-decoration: none;
-}
+/*Placeholder text - Making the font to theme*/
 
 ::-webkit-input-placeholder{
 	font-family: 'Open Sans', sans-serif;
@@ -49,3 +41,15 @@ h3 a:hover {
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 }
+
+/*Adding style to Contact Info Links*/
+
+h3 a{
+	padding: 2px;
+	color: #b999c8;
+	text-decoration: underline;
+}
+
+h3 a:hover {
+	text-decoration: none;
+}	
