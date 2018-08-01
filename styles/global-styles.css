@@ -18,7 +18,7 @@ body {
 	background: linear-gradient(to right, rgba(47,47,47,.8) , rgba(47,47,47,.9), rgba(47,47,47,1), #3f3f3f, rgba(47,47,47,1), rgba(47,47,47,.9), rgba(47,47,47,.8));
 	border-bottom: 3px solid #b999c8;
 	position: fixed;
-	z-index: 1;
+	z-index: 101;
 	top: 0px;
 	left: 0px;
 	right: 0px;
@@ -308,8 +308,6 @@ div>input {
 	text-align: center;
 	border-top: 3px solid #b999c8;
 	border-bottom: 3px solid #b999c8;
-
-
 }
 
 #mwClick {

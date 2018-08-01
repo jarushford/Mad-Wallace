@@ -1,21 +1,8 @@
-.snapwidget-widget{
-	border:none; 
-	overflow:hidden; 
-	width:90%; 
-	height:60vw;
-	padding-right: 5%;
-	padding-left: 5%;
-	padding-top: 5%;
-}
+
+/*General Page styling*/
+
 .media{
 	padding-top: 50px;
-}
-
-#media{
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	max-width: %100;
 }
 
 .media h1{
@@ -32,6 +19,32 @@
 				 0px 5px 5px rgba(0,0,0,0.1);
 }
 
+
+.insta, .follow-youtube, .follow-spotify{
+	text-align: center;
+}
+
+#instaLink, #youLink, #spotLink {
+	display: inline-block;
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	margin: 30px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 7px 24px 7px 24px;
+	letter-spacing: 3px;
+	font-size: 20;
+	color: white;
+	border: 3px solid #b999c8;
+	border-radius: 25px;
+	transition: all 0.3s ease 0s;
+}
+
+#instaLink:hover, #youLink:hover, #spotlink:hover {
+	transform: translateY(-2px);
+	background-color: grey;
+}
+
+
+/*Music Section Styling*/
 
 #spotifyPlayer{
 	width: 90%; 
@@ -68,30 +81,7 @@
 	
 } 
 
-.insta, .follow-youtube, .follow-spotify{
-	text-align: center;
-}
-
-#instaLink, #youLink, #spotLink {
-	display: inline-block;
-	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
-	margin: 30px;
-	font-family: 'Open Sans', sans-serif;
-	padding: 7px 24px 7px 24px;
-	letter-spacing: 3px;
-	font-size: 20;
-	color: white;
-	border: 3px solid #b999c8;
-	border-radius: 25px;
-	transition: all 0.3s ease 0s;
-}
-
-#instaLink:hover, #youLink:hover, #spotlink:hover {
-	transform: translateY(-2px);
-	background-color: grey;
-}
-
-
+/*Music Section Grid Work/Size Responsiveness*/
 
 @supports (grid-area: auto){
 
@@ -210,6 +200,7 @@
 
 }
 
+/*Video Section Styling*/
 /*YOUTUBE*/
 
 .full-container {
@@ -349,7 +340,17 @@
 	}
 }
 
+/*Instagram Section Styling*/
 
+.snapwidget-widget{
+	border:none; 
+	overflow:hidden; 
+	width:90%; 
+	height:60vw;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+}
 
 
 
