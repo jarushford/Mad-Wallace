@@ -7,12 +7,6 @@
 	display: inherit;
 }
 
-#alt {
-	width:100%;
-	height: auto;
-	
-}
-
 #goggles {
 	width: 4%;
 	height: auto;
@@ -46,6 +40,7 @@
 	margin-top: 30px;
 	margin-bottom: 80px;
 	font-size: .95em;
+	
 	color: #cecece;
 	letter-spacing: .5px;
 	line-height: 20px;
