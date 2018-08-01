@@ -1,3 +1,10 @@
+
+/*Music Section Styling*/
+
+/*Video Section Styling*/
+
+/*Instagram Section Styling*/
+
 .snapwidget-widget{
 	border:none; 
 	overflow:hidden; 
@@ -9,13 +16,6 @@
 }
 .media{
 	padding-top: 50px;
-}
-
-#media{
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	max-width: %100;
 }
 
 .media h1{

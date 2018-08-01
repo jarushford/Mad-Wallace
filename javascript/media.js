@@ -1,3 +1,6 @@
+
+// For the arrow function on the video player
+
 $(document).ready(function () {
     $(".arrow-right").bind("click", function (event) {
         event.preventDefault();
