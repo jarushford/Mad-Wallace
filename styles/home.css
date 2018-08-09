@@ -147,11 +147,30 @@
 	width:20em;
 	}
 
-	#youtube{
-		height: 315px;
-		width: 20em;
+	@media screen and (max-width: 350px){
+
+		.grid {
+	display: grid;
+	grid-template-columns: 320px;
+	grid-template-rows: 470px 1fr 1fr 1fr;
+	}
+
+	#spotifyPlayer{
+		width: 270px;
+	}
+
+	#youtube {
+		width: 270px;
+	}
+
+	#hookline{
+		width: 270px;
+		height: 270px;
+	}
+
 	}
 
 
 }
+
 
