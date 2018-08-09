@@ -81,3 +81,19 @@ h3 a:hover {
 	background-color: grey;
 	transform: translateY(-3px);
 }
+
+@media and screen (max-width: 390px){
+
+	#name, #email {
+		size: 41;
+	}
+
+	#message {
+		cols: 39;
+	}
+
+	p a {
+		font-size: 8px
+	}
+
+}
