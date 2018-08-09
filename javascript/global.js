@@ -30,3 +30,8 @@ $(document).ready(function () {
         }, 750);
     });
 });
+
+$(".carrot").on("click", function() {
+    $(this).toggleClass("carrotGone");
+    $(this).siblings(".hvrbox-text").toggleClass("textThere")
+});

@@ -93,7 +93,7 @@ h3>span {
 	transform: translateY(30px);
 	position: absolute;
 	margin-left: 5.5%;
-	margin-top: 45%;
+	margin-top: 38%;
 	width: 315px;
 	background-color: rgba(30,30,30,.85);
   border-radius: 25px;
@@ -105,6 +105,9 @@ h3>span {
   transition: 1s;
 }
 
+
+@media screen and (min-width: 830px) {
+
 .bio-container:hover .hvrbox-text {
 	transform: translateY(0px);
 	opacity: 1;
@@ -112,6 +115,8 @@ h3>span {
 
 .bio-container:hover .carrot {
 	opacity: 0;
+}
+
 }
 
 .carrot {
@@ -188,6 +193,7 @@ h3>span {
 	}
 
 
+
 	.hvrbox-text {
 	    -webkit-transition: none !important;
 	    -moz-transition: none !important;
@@ -204,6 +210,16 @@ h3>span {
 		transition: none !important;
 	}
 
+
+	.textThere {
+		opacity: 1;
+	}
+
+	.carrotGone {
+		opacity: .5;
+		transform: rotate(180deg) 
+				translateY(60px);
+	}
 
 }
 
