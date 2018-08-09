@@ -53,3 +53,29 @@ h3 a{
 h3 a:hover {
 	text-decoration: none;
 }	
+
+.press-button {
+	height: 40px;
+	width: 170px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+    border-radius: 4px;
+  	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+/*	border: 3px solid #4e285a;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    border-radius: 45px;
+    outline: none;
+}
+
+.press-button:hover {
+	cursor: pointer;
+	background-color: grey;
+	transform: translateY(-3px);
+}
