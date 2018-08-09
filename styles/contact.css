@@ -49,6 +49,7 @@ textarea {
 h3 a{
 	padding: 2px;
 	color: #b999c8;
+	font-size: 20px;
 	text-decoration: underline;
 }
 
@@ -82,18 +83,10 @@ h3 a:hover {
 	transform: translateY(-3px);
 }
 
-@media and screen (max-width: 390px){
 
-	#name, #email {
-		size: 41;
+@media (max-width: 550px){
+
+	h3 a{
+		font-size: 12px;
 	}
-
-	#message {
-		cols: 39;
-	}
-
-	p a {
-		font-size: 8px
-	}
-
 }
