@@ -256,13 +256,13 @@ strong {
 		margin: 15px auto;
 		text-align: justify;
 		max-width: 90%;
-		min-width: 370px;
+		min-width: 330px;
 	}
 	.music {
 		grid-column: 1;
 		grid-row: 2;
 		display: block;
-		margin: 70px auto 0 auto;
+		margin: 150px auto 0 auto;
 	}
 	.music h1 {
 		margin-left: 10%;
