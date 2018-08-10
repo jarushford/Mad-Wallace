@@ -89,6 +89,7 @@ hr {
 #hookline {
 	width: 90%;
 	height: auto;
+	margin-left: 20px;
 }
 
 .music {
@@ -105,7 +106,8 @@ hr {
 
 .music h1 {
 	margin-left: 24px;
-	margin-top: 0;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 #hooklinelink {
@@ -188,13 +190,20 @@ hr {
 	grid-row: 3;
 }
 
-#video p {
-	margin-left: 18px;
+iframe	{
+	width: 90%;
+	height: 70%;
+	margin-left: 15px;
 }
 
-#video h1 {
-	position: absolute;
+.video p {
+	margin-left: 30px;
+}
+
+.video h1 {
 	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-top: 0;
 }
 
 #vidlink {
@@ -223,6 +232,109 @@ strong {
 #best {
 	margin-top: 20px;
 }
+
+
+@media screen and (max-width: 990px) {
+	.music {
+		transform: translateY(-10%);
+	}
+
+}
+
+@media screen and (max-width: 935px) {
+	.container {
+		margin: 10px 20px;
+		display: grid;
+		grid-gap: 20px;
+	  	grid-template-columns: 100%;
+	}
+	.bios {
+		grid-column: 1;
+		grid-row: 1;
+		width: 100%;
+		display: block;
+		margin: 15px auto;
+		text-align: justify;
+		max-width: 90%;
+		min-width: 370px;
+	}
+	.music {
+		grid-column: 1;
+		grid-row: 2;
+		display: block;
+		margin: 70px auto 0 auto;
+	}
+	.music h1 {
+		margin-left: 10%;
+	}
+	#hookline {
+		width: 80%;
+		height: auto;
+		display: block;
+		margin: 10px auto;
+	}
+	.images {
+		max-width: 700px;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		grid-column: 1;
+		grid-row: 3;
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+		grid-gap: 10px;
+		grid-auto-rows: minmax(170px, auto);
+	}
+	.press {
+		grid-column: 1;
+	  	grid-row: 4;
+	  	display: block;
+	  	margin: 0 auto;
+	    background: rgba(174, 163, 185, 0.5);
+		padding: 3px 15px 0 15px;
+		border-radius: 8px;
+	}
+	.video {
+		display: block;
+		grid-column: 1;
+		grid-row: 5;
+	}
+	iframe {
+		min-height: 200px;
+	}
+
+}
+
+@media screen and (min-width: 450px) {
+	iframe {
+		min-height: 300px;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 650px) {
+	iframe {
+		min-height: 400px;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 850px) {
+	iframe {
+		min-height: 450px;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+
 
 
 
