@@ -1,3 +1,5 @@
+/*Body and Header Styles*/
+
 body {
 	max-width: 16000px;
 	margin: auto;
@@ -34,15 +36,18 @@ body {
 	padding: 1px;
 }
 
+
+/*------------------*/
+
+
+
+
 .container {
-	max-width: 100%;
+	margin: 10px 20px;
 	display: grid;
-	column-gap: 1.5em;
-	margin-right: auto;
-	margin-left: auto;
-	justify-content: center;
-	grid-template-columns: 42% 53%;
-	grid-template-rows: auto auto;
+  	grid-template-columns: 40% 55%;
+  	grid-gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
 }
 
 h3	{
@@ -64,12 +69,14 @@ h3	{
 }
 
 .bios {
-	grid-column: 1/2;
-	grid-row: 1/2;
+	grid-column: 1;
+	grid-row: 1/3;
 	width: 95%;
 	display: block;
 	margin: 15px auto;
 	text-align: justify;
+	max-width: 380px;
+	max-height: 900px;
 }
 
 hr {
@@ -82,10 +89,15 @@ hr {
 #hookline {
 	width: 90%;
 	height: auto;
-	grid-column: 1/2;
-	grid-row: 2/2;
+	margin-left: 20px;
+}
+
+.music {
+	grid-column: 1;
+	grid-row: 3 / 4;
 	display: block;
-	margin: auto;
+	margin-left: 20px;
+	transform: translateY(-90px);
 }
 
 .music p {
@@ -94,88 +106,104 @@ hr {
 
 .music h1 {
 	margin-left: 24px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 #hooklinelink {
 	text-decoration: underline;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px 0 0;
-  grid-column: 2/2;
-  grid-row: 1/2;
-  margin-top: 248px;
-}
 
-.column1 {
-  flex: 25%;
-  max-width: 46.5%;
-  padding: 0 4px 0 0;
-}
-
-.column2 {
-	flex: 25%;
-	max-width: 42.8%;
-	padding: 0 4px;
-}
-
-.column1 img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-.column2 img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-
-
-#bandCity {
-	display: block;
-	width: 90.1%;
+.images {
+	max-width: 700px;
+	width: 100%;
 	height: auto;
-	margin-top: 35px;
-	grid-column: 2/2;
-  	grid-row: 1/2;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	grid-gap: 10px;
+	grid-auto-rows: minmax(170px, auto);
+}
+
+#download {
+	grid-column: 1/ 3;
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 5px auto;
+	border-radius: 44px;
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    color: white;
+}
+
+#photolink {
+	grid-column: 1/ 3;
+	display: block;
+	text-decoration: none;
+	outline: none;
+	height: 100px;
+}
+
+#download:hover {
+	cursor: pointer;
+}
+
+#city {
+	height: 100%;
+  	background-size: cover;
+  	background-position: center;
+	grid-column: 1 / 3;
+	grid-row: 1;
 }
 
 #garage {
-	width: 100%;
-	height: auto;
+	height: 100%;
+  	background-size: cover;
+  	background-position: center;
+	grid-column: 1;
+	grid-row: 2 / 4;
 }
 
 #singing {
-	width: 100%;
-	height: auto;
+	height: 100%;
+  	background-size: cover;
+  	background-position: center;
+	grid-column: 2;
+	grid-row: 2 / 3;
 }
 
 #outside {
-	width: 100%;
-	height: auto;
+	height: 100%;
+  	background-size: cover;
+  	background-position: center;
+	grid-column: 2;
+	grid-row: 3 / 4;
 }
 
-iframe {
-	margin-top: 80px;
-	margin-left: 5px;
-
+.video {
+	display: block;
+	grid-column: 2 / 3;
+	grid-row: 3;
 }
 
-#video {
-	position: absolute;
-	bottom: -80%;
-	left: 46%;
+iframe	{
+	width: 90%;
+	height: 70%;
+	margin-left: 15px;
 }
 
-#video p {
-	margin-left: 18px;
+.video p {
+	margin-left: 30px;
 }
 
-#video h1 {
-	position: absolute;
+.video h1 {
 	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-top: 0;
 }
 
 #vidlink {
@@ -183,23 +211,13 @@ iframe {
 }
 
 .press {
-	width: 480px;
-	grid-column: 2/2;
-  	grid-row: 1/2;
-  	position: absolute;
-  	bottom: -29%;
-  	left: 46%;
-  	background: rgba(174, 163, 185, 0.5);
+	grid-column: 2 / 3;
+  	grid-row: 2 / 3;
+  	display: block;
+    background: rgba(174, 163, 185, 0.5);
 	padding: 3px 15px 0 15px;
 	border-radius: 8px;
-}
-
-#presstitle {
-	grid-column: 2/2;
-  	grid-row: 1/2;
-  	position: absolute;
-  	left: 46%;
-	bottom: -1%;
+	transform: translateY(-60px);
 }
 
 #author {
@@ -216,6 +234,112 @@ strong {
 }
 
 
+@media screen and (max-width: 990px) {
+	.music {
+		transform: translateY(-10%);
+	}
+
+}
+
+@media screen and (max-width: 935px) {
+	.container {
+		margin: 10px 20px;
+		display: grid;
+		grid-gap: 20px;
+	  	grid-template-columns: 100%;
+	}
+	.bios {
+		grid-column: 1;
+		grid-row: 1;
+		width: 100%;
+		display: block;
+		margin: 15px auto;
+		text-align: justify;
+		max-width: 90%;
+		min-width: 330px;
+	}
+	.music {
+		grid-column: 1;
+		grid-row: 2;
+		display: block;
+		margin: 150px auto 0 auto;
+	}
+	.music h1 {
+		margin-left: 10%;
+	}
+	#hookline {
+		width: 80%;
+		height: auto;
+		display: block;
+		margin: 10px auto;
+	}
+	.images {
+		max-width: 700px;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		grid-column: 1;
+		grid-row: 3;
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+		grid-gap: 10px;
+		grid-auto-rows: minmax(170px, auto);
+	}
+	.press {
+		grid-column: 1;
+	  	grid-row: 4;
+	  	display: block;
+	  	margin: 0 auto;
+	    background: rgba(174, 163, 185, 0.5);
+		padding: 3px 15px 0 15px;
+		border-radius: 8px;
+	}
+	.video {
+		display: block;
+		grid-column: 1;
+		grid-row: 5;
+	}
+	iframe {
+		min-height: 200px;
+	}
+
+}
+
+@media screen and (min-width: 450px) {
+	iframe {
+		min-height: 300px;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 650px) {
+	iframe {
+		min-height: 400px;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 850px) {
+	iframe {
+		min-height: 450px;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.video h1 {
+		margin-left: 5%;
+	}
+}
+
+
+
+
+
+/*footer styles*/
 
 footer {
 	margin-top: 80px;
@@ -233,7 +357,7 @@ div>input {
 }
 
 .lowerToolbar{
-	background-image: url(images/lowercover.jpg);
+	background-image: url("images/lowercover.jpg");
 	background-position: center;
 	width: 100%;
 	margin: auto;
@@ -265,7 +389,6 @@ h4 {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 8px;
-    border-radius: 4px;
   	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
