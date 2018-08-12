@@ -416,9 +416,11 @@
 
 .snapwidget-widget{
 	border:none; 
+	position: relative;
 	overflow:hidden; 
 	width:90%; 
 	height:60vw;
+	max-height: 60vw;
 	padding-right: 5%;
 	padding-left: 5%;
 	padding-top: 5%;
