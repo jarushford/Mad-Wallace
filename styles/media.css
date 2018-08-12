@@ -5,7 +5,7 @@
 	padding-top: 50px;
 }
 
-.media h1{
+.media h1 {
 	color: white;
 	background: #b999c8;
 	background: linear-gradient(to left, rgba(185,153,200,0), rgba(185,153,200,1)); 
@@ -18,6 +18,7 @@
 				
 				 0px 5px 5px rgba(0,0,0,0.1);
 }
+
 
 
 .insta, .follow-youtube, .follow-spotify{
@@ -208,11 +209,11 @@
 /*YOUTUBE*/
 
 .full-container {
-  			width: 100%;
-  			max-width: 854px;
-  			min-width: 380px;
-  			margin: 0 auto;
-  		}
+	width: 100%;
+	max-width: 854px;
+	min-width: 380px;
+	margin: 0 auto;
+}
 
 
 .vid-container {
@@ -309,12 +310,12 @@
 	cursor: pointer;
 }
 
-.arrow-left:hover {
+.arrow-left:hover, .left-button:hover {
 	transform: translateX(-2px);
 	background-color: grey;
 }
 
-.arrow-right:hover {
+.arrow-right:hover, .right-button:hover {
 	transform: translateX(2px);
 	background-color: grey;
 }
@@ -324,17 +325,17 @@
 }
 
 @media (max-width: 1000px) {
-	.arrows {
+	.arrows, .photo-arrows {
 		position:relative;
-		margin: 0 auto;
+		margin: 20px auto;
 		width:100px;
 	}
-	.arrow-left {
+	.arrow-left, .left-button {
 		left: -10px;
 		top: -20px;
 	}
 
-	.arrow-right {
+	.arrow-right, .right-button {
 		right: -10px;
 		top: -20px;
 	}
@@ -355,6 +356,62 @@
 	}
 }
 
+/*Slideshow*/
+.slideshow {
+	width: 100%;
+	max-width: 854px;
+	min-width: 310px;
+	margin: 0 auto;
+}
+.slide{
+	width: 92%;
+	max-height: 500px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+} 
+
+.photo-arrows {
+	position:relative;
+	margin: 20px auto;
+	width:100px;
+	justify-content: center;
+
+}
+
+.left-button {
+	color: #fff;
+	position: absolute;
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	padding: 15px 20px;
+	border: 3px solid #b999c8;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	top: 50%;
+  	left: -10%;
+	z-index: 99;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+}
+.right-button {
+	color: #fff;
+	position: absolute;
+	background: linear-gradient(to right, rgba(47,47,47,.1) , rgba(47,47,47,.8), rgba(47,47,47,.9), #3f3f3f, rgba(47,47,47,.9), rgba(47,47,47,.8), rgba(47,47,47,.1));
+	padding: 15px 20px; 
+	border: 3px solid #b999c8;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	top: 50%;
+	right: -10%;
+	z-index:100;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+}
+
+
+
 /*Instagram Section Styling*/
 
 .snapwidget-widget{
@@ -365,7 +422,18 @@
 	padding-right: 5%;
 	padding-left: 5%;
 	padding-top: 5%;
+	margin-top: 60px;
 }
+
+#instaHead {
+	margin-top: 30px;
+}
+
+.insta {
+	max-width: 844px;
+	margin: 0 auto;
+}
+
 
 
 
