@@ -65,7 +65,7 @@
 	margin-left: auto;
 	opacity: 1;
 	margin-top: 30px;
-}
+}	
 
 #twenty804 {
 	width: 90%;
@@ -388,7 +388,7 @@
 	border-radius: 50px;
 	transition: all 0.3s ease 0s;
 	top: 50%;
-  	left: -10%;
+  	left: -20%;
 	z-index: 99;
 	cursor: pointer;
 	font-size: 20px;
@@ -403,7 +403,7 @@
 	border-radius: 50px;
 	transition: all 0.3s ease 0s;
 	top: 50%;
-	right: -10%;
+	right: -20%;
 	z-index:100;
 	cursor: pointer;
 	font-size: 20px;
@@ -417,14 +417,13 @@
 .snapwidget-widget{
 	border:none; 
 	position: relative;
-	overflow:hidden; 
-	width:90%; 
-	height:60vw;
-	max-height: 60vw;
+	overflow: hidden; 
+	width: 90%; 
+	height: 65vw;
 	padding-right: 5%;
 	padding-left: 5%;
 	padding-top: 5%;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 #instaHead {
@@ -436,7 +435,34 @@
 	margin: 0 auto;
 }
 
+@media (min-width: 1000px){
 
+	.snapwidget-widget{
+	height: 50vw;
+	}
+
+	@media (min-width: 1300px){
+		
+		.snapwidget-widget{	
+			height: 40vw;
+		}
+
+		@media (min-width: 1600px){
+		
+			.snapwidget-widget{	
+				height: 30vw;
+			}
+
+			@media (min-width: 1900px){
+		
+				.snapwidget-widget{	
+					height: 20vw;
+				}
+			}
+		}
+	}
+
+}
 
 
 
