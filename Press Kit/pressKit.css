@@ -250,7 +250,7 @@ strong {
 	}
 	.bios {
 		grid-column: 1;
-		grid-row: 1;
+		grid-row: 1 /3;
 		width: 100%;
 		display: block;
 		margin: 15px auto;
@@ -260,9 +260,9 @@ strong {
 	}
 	.music {
 		grid-column: 1;
-		grid-row: 2;
+		grid-row: 3;
 		display: block;
-		margin: 180px auto 0 auto;
+		margin: 100px auto 0 auto;
 	}
 	.music h1 {
 		margin-left: 10%;
@@ -280,7 +280,7 @@ strong {
 		height: auto;
 		margin-top: 50px;
 		grid-column: 1;
-		grid-row: 3;
+		grid-row: 4;
 		display: grid;
 		grid-template-columns: 1fr, 1fr;
 		grid-gap: 10px;
@@ -288,7 +288,7 @@ strong {
 	}
 	.press {
 		grid-column: 1;
-	  	grid-row: 4;
+	  	grid-row: 5;
 	  	display: block;
 	  	margin: 0 auto;
 	    background: rgba(174, 163, 185, 0.5);
@@ -298,7 +298,7 @@ strong {
 	.video {
 		display: block;
 		grid-column: 1;
-		grid-row: 5;
+		grid-row: 6;
 	}
 	iframe {
 		min-height: 200px;
